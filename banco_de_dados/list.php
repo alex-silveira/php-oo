@@ -8,5 +8,5 @@
     echo '<h3> Produtos: </h3>';
 
     foreach ($pdo->query($sql) as $key => $value){
-        echo 'Id' . $value['$id']. '<br> Descricões' . $value['descricao'] . 'hr';
+        echo 'Id: ' . $value['id']. '<br> Descricões: ' . $value['descricao'] . '<hr>';
     }
